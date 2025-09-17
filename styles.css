@@ -1,0 +1,250 @@
+html_content="" "<!DOCTYPE html>
+ <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pixel Pop Labs - Portfolio</title><link rel="stylesheet" href="styles.css"></head><body>< !-- Navigation Bar --><nav id="navbar"><div class="nav-container"><div class="nav-brand"><a href="#welcome-section">Pixel Pop Labs</a></div><ul class="nav-links"><li><a href="#welcome-section">Home</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>< !-- Welcome Section --><section id="welcome-section"><div class="welcome-content"><h1>Welcome to Pixel Pop Labs</h1><p>Web Design,
+SEO & AI Product Photography Digital Agency</p><p>Creating eye-catching AI-generated content for brands</p></div></section>< !-- Projects Section --><section id="projects"><div class="projects-container"><h2>Our Featured Projects</h2><div class="projects-grid"><div class="project-tile"><img src="https://via.placeholder.com/300x200" alt="AI Product Photography"><h3>AI Product Photography</h3><p>High-impact,
+personalized product photos using cutting-edge AI</p><a href="https://github.com/pixelpoplabs/ai-photography" target="_blank">View Project</a></div><div class="project-tile"><img src="https://via.placeholder.com/300x200" alt="SEO Website Optimization"><h3>SEO Website Optimization</h3><p>Complete website optimization for enhanced search engine visibility</p><a href="https://github.com/pixelpoplabs/seo-optimization" target="_blank">View Project</a></div><div class="project-tile"><img src="https://via.placeholder.com/300x200" alt="Social Media Campaigns"><h3>Social Media Campaigns</h3><p>Engaging UGC ads and content that boost engagement and sales</p><a href="https://github.com/pixelpoplabs/social-campaigns" target="_blank">View Project</a></div><div class="project-tile"><img src="https://via.placeholder.com/300x200" alt="WordPress Development"><h3>WordPress Development</h3><p>Custom WordPress solutions with advanced functionality</p><a href="https://github.com/pixelpoplabs/wordpress-solutions" target="_blank">View Project</a></div></div></div></section>< !-- Contact Section --><section id="contact"><div class="contact-container"><h2>Get In Touch</h2><p>Ready to boost your brand with AI-powered creative solutions?</p><div class="contact-links"><a id="profile-link" href="https://github.com/pixelpoplabs" target="_blank">GitHub</a><a href="mailto:pixelpopadsai@gmail.com">Email</a><a href="https://www.fiverr.com/pixelpoplabs" target="_blank">Fiverr</a></div></div></section></body></html>"" "
+
+
+# Creating styles.css css_content="" "/* Reset and Base Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar - Fixed at top */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Welcome Section - Full viewport height */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.welcome-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+/* Projects Section */
+#projects {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.project-tile {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-tile h3 {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.project-tile p {
+    padding: 0 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-tile a {
+    display: block;
+    padding: 1rem;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-tile a:hover {
+    background: #c0392b;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5rem 2rem;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Media Queries - Required for test */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .welcome-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-content p {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links a {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-content h1 {
+        font-size: 2rem;
+    }
+
+    .projects-container h2,
+    .contact-container h2 {
+        font-size: 2rem;
+    }
+
+    #projects,
+    #contact {
+        padding: 3rem 1rem;
+    }
+}
